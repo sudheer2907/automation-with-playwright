@@ -5,19 +5,8 @@ exports.BaseHelper = class BaseHelper {
         this.page = page;
     }
 
-    getCurrentDateAndTime() {
-        var currentdate = new Date();
-        var datetime = currentdate.getFullYear()
-            + "-" + currentdate.getMonth()
-            + "-" + currentdate.getDate()
-            + "-" + currentdate.getHours()
-            + "-" + currentdate.getMinutes()
-            + "-" + currentdate.getSeconds();
-        return datetime.toString();
-    };
+    async openApplication() {
+    await this.page.goto('https://the-internet.herokuapp.com/');
+  }
 
-    openApplication() {
-        cy.visit('https://demo.seleniumeasy.com/');
-        cy.xpath('//a[contains(text(),"No, thanks!")]').click();
-    };
 }
