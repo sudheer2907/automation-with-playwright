@@ -7,7 +7,7 @@ const fs = require('fs');
  * Dynamically load environment variables from config/.env.{ENV}
  * Defaults to 'dev' if ENV is not set
  */
-const envFile = `./config/.env.${process.env.ENV || 'dev'}`;
+const envFile = `./config/env.${process.env.ENV || 'dev'}`;
 if (fs.existsSync(envFile)) {
   dotenv.config({ path: envFile });
   console.log(`✅ Loaded environment: ${process.env.ENV || 'dev'}`);
@@ -55,13 +55,7 @@ const config = {
     // },
   ],
 
-  outputDir: 'test-results/',
-
-  // Optional: start local server before tests
-  // webServer: {
-  //   command: 'npm run start',
-  //   port: 3000,
-  // },
+  outputDir: 'playwright-report/',
 };
 
 module.exports = config;

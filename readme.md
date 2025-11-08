@@ -20,7 +20,9 @@ npm install
 npx playwright install
 
 🚀 How to Run Tests
-Run all tests -> ENV=qa npx playwright test
+Run all tests -> 
+set ENV=qa 
+npx playwright test
 Run a specific test file -> ENV=qa npx playwright test e2e/tests/testxyz.spec.js
 Run with browser UI (headed mode) -> ENV=qa npx playwright test e2e/tests/testxyz.spec.js --headed
 Run with trace viewer enablednpx playwright test --trace on
