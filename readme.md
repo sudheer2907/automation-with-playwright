@@ -23,9 +23,14 @@ npx playwright install
 Run all tests -> 
 set ENV=qa 
 npx playwright test
+
 Run a specific test file -> ENV=qa npx playwright test e2e/tests/testxyz.spec.js
 Run with browser UI (headed mode) -> ENV=qa npx playwright test e2e/tests/testxyz.spec.js --headed
 Run with trace viewer enablednpx playwright test --trace on
+Record test cases -> npx playwright codegen https://the-internet.herokuapp.com
+
+Important Annotations in PLAYWRIGHT
+
 
 📊 View Test Report
 After running tests, generate and open the HTML report -> npx playwright show-report

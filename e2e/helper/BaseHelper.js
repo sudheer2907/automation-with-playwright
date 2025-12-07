@@ -6,7 +6,10 @@ exports.BaseHelper = class BaseHelper {
   }
 
   async openApplication() {
-    await this.page.goto('https://the-internet.herokuapp.com/');
+    const baseUrl = process.env.BASE_URL || 'https://the-internet.herokuapp.com/';
+    console.log(`🌐 Navigating to: ${baseUrl}`);
+    await this.page.goto(baseUrl);
   }
+
 
 }

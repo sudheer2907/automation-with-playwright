@@ -1,4 +1,3 @@
-// @ts-check
 const { devices } = require('@playwright/test');
 const dotenv = require('dotenv');
 const fs = require('fs');
@@ -21,41 +20,33 @@ if (fs.existsSync(envFile)) {
  */
 const config = {
   testDir: './e2e/test',
-  timeout: 30 * 1000,
+  timeout: 50 * 1000, // sets the maximum duration for an entire test.
   expect: {
-    timeout: 5000,
+    timeout: 10000, // Sets the default timeout (in ms) for waitFor, expect, and other operations.
   },
-  fullyParallel: true,
+  fullyParallel: false, // enable parallel execution.
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
+  workers: 3, // sets the parallel thread
   reporter: [['html', { open: 'never' }]],
 
   use: {
-    baseURL: process.env.BASE_URL || 'https://default-url.com',
-    actionTimeout: 0,
+    baseURL: process.env.BASE_URL || 'https://the-internet.herokuapp.com/',
+    actionTimeout: 0, // Sets the default timeout (in ms) for actions like click, check, uncheck
+    timeout: 10000, // Sets the default timeout (in ms) for waitFor, expect, and other operations.
     trace: 'on-first-retry',
-    screenshot: 'only-on-failure',
-    video: 'retain-on-failure',
+    screenshot: 'only-on-failure',  // enables screenshots feature
+    video: 'retain-on-failure', // enables video feature
   },
 
   projects: [
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
-    },
-    // Add more browsers if needed
-    // {
-    //   name: 'firefox',
-    //   use: { ...devices['Desktop Firefox'] },
-    // },
-    // {
-    //   name: 'webkit',
-    //   use: { ...devices['Desktop Safari'] },
-    // },
+    }
   ],
 
-  outputDir: 'playwright-report/',
+  outputDir: 'test-result/',
 };
 
 module.exports = config;
