@@ -13,10 +13,19 @@ exports.Herokuapp = class Herokuapp {
 
   async clickLeftMenu(menu) {
     console.log("Clicking menu: " + menu);
-    const menuLocator = this.page.locator("//a[contains(text(),'" + menu + "')]");
+    // Prefer exact link text match to avoid ambiguous matches like
+    // "File Download" vs "Secure File Download". Fall back to contains() if exact
+    // match is not found.
+    const exactXpath = "//a[normalize-space(text())='" + menu + "']";
+    let menuLocator = this.page.locator(exactXpath);
     try {
+      const count = await menuLocator.count();
+      if (count === 0) {
+        // fallback to contains if exact match not present
+        menuLocator = this.page.locator("//a[contains(text(),'" + menu + "')]");
+      }
       await menuLocator.waitFor({ state: 'visible' });
-      await menuLocator.click();
+      await menuLocator.first().click();
     } catch (error) {
       console.error("Failed to click menu: " + menu, error);
       throw error;
@@ -136,22 +145,54 @@ exports.Herokuapp = class Herokuapp {
       `#${tableId} tbody tr td:nth-child(${columnIndex})`,
       tds => tds.map(td => td.textContent.trim())
     );
+    // Helper to try numeric comparison first (handles currency like "$51.00"),
+    // fall back to string localeCompare when values are non-numeric.
+    const parseNumber = (s) => {
+      if (s === null || s === undefined) return NaN;
+      const cleaned = String(s).replace(/[^0-9.\-]+/g, '');
+      if (cleaned === '' || cleaned === '.' || cleaned === '-') return NaN;
+      const n = parseFloat(cleaned);
+      return Number.isFinite(n) ? n : NaN;
+    };
 
-    // Check sorting based on order
+    // Check sorting based on order using numeric-aware comparison
     for (let i = 0; i < cells.length - 1; i++) {
-      if (order === "asc") {
-        if (cells[i].localeCompare(cells[i + 1]) > 0) {
-          return false;
-        }
-      } else if (order === "desc") {
-        if (cells[i].localeCompare(cells[i + 1]) < 0) {
-          return false;
+      const a = cells[i];
+      const b = cells[i + 1];
+      const an = parseNumber(a);
+      const bn = parseNumber(b);
+
+      if (!Number.isNaN(an) && !Number.isNaN(bn)) {
+        if (order === 'asc') {
+          if (an > bn) return false;
+        } else if (order === 'desc') {
+          if (an < bn) return false;
+        } else {
+          throw new Error(`Invalid sort order '${order}'. Use 'asc' or 'desc'.`);
         }
       } else {
-        throw new Error(`Invalid sort order '${order}'. Use 'asc' or 'desc'.`);
+        // Fallback to string comparison
+        if (order === 'asc') {
+          if (a.localeCompare(b) > 0) return false;
+        } else if (order === 'desc') {
+          if (a.localeCompare(b) < 0) return false;
+        } else {
+          throw new Error(`Invalid sort order '${order}'. Use 'asc' or 'desc'.`);
+        }
       }
     }
     return true;
+  }
+
+  // Convenience wrapper used by some tests
+  async isColumnSorted(columnName, order = "asc") {
+    return await this.isColumnSortedByTableId("table1", columnName, order);
+  }
+
+  // Sort a column in the second example table
+  async sortExample2Column(columnName) {
+    const columnXpath = this.page.locator("//table[@id='table2']//span[contains(text(),'" + columnName + "')]");
+    return await columnXpath.click();
   }
 
 }

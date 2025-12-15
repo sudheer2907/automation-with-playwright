@@ -3,10 +3,10 @@ const dotenv = require('dotenv');
 const fs = require('fs');
 
 /**
- * Dynamically load environment variables from config/.env.{ENV}
+ * Dynamically load environment variables from config/{ENV}.config
  * Defaults to 'dev' if ENV is not set
  */
-const envFile = `./config/env.${process.env.ENV || 'dev'}`;
+const envFile = `./config/${process.env.ENV || 'dev'}.config`;
 if (fs.existsSync(envFile)) {
   dotenv.config({ path: envFile });
   console.log(`✅ Loaded environment: ${process.env.ENV || 'dev'}`);
@@ -24,7 +24,7 @@ const config = {
   expect: {
     timeout: 10000, // Sets the default timeout (in ms) for waitFor, expect, and other operations.
   },
-  fullyParallel: false, // enable parallel execution.
+  fullyParallel: true, // enable parallel execution.
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: 3, // sets the parallel thread

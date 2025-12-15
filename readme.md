@@ -17,7 +17,7 @@ Follow these steps to set up the project:
 npm install
 
 3. Install Playwright browsers
-npx playwright install
+npm init playwright@latest
 
 🚀 How to Run Tests
 Run all tests -> 

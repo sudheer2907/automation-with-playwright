@@ -29,24 +29,34 @@ test.describe('Test InternetHerokuApp application', () => {
     expect(await herokuapp.isAddRemovePageOpened()).toBe(true);
   });
 
-  test('Verify images are not broken', async ({ page }) => {
+  test('Verify Broken Images page reports broken images', async ({ page }) => {
     await herokuapp.clickLeftMenu("Broken Images");
     const imagesxpath = page.locator('img');
     const count = await imagesxpath.count();
     console.log('Total Images on the page are: ' + count)
 
+    const broken = [];
     for (let i = 0; i < count; i++) {
       const img = imagesxpath.nth(i);
-      const src = await img.getAttribute('src');
+      const src = await img.getAttribute('src'); //asdf.jpg, hjkl.jpg, img/avatar-blank.jpg
 
-      // ✅ Ensure src is not null or empty
+      // Ensure src is not null or empty
       expect(src).not.toBeNull();
       expect(src).not.toBe('');
 
-      // ✅ Check if image loads successfully
-      const response = await page.request.get(src.startsWith('http') ? src : `https://the-internet.herokuapp.com${src}`);
-      expect(response.status()).toBeLessThan(400);
+      // Check if image loads successfully (normalize relative URLs)
+      const base = process.env.BASE_URL || 'https://the-internet.herokuapp.com/';
+      const url = src.startsWith('http') ? src : new URL(src, base).toString();
+      const response = await page.request.get(url);
+      if (response.status() >= 400) {
+        broken.push({ src: url, status: response.status() });
+      }
     }
+
+    // The Broken Images page intentionally contains broken resources; assert we
+    // detect at least one broken image and report details.
+    console.log('Broken images found:', broken);
+    expect(broken.length).toBeGreaterThan(0);
   });
 
   test('Verify checkboxes are working', async ({ page }) => {
@@ -56,14 +66,15 @@ test.describe('Test InternetHerokuApp application', () => {
     // Locate the checkboxes
     const checkboxes = page.locator('//form[@id="checkboxes"]/input');
 
-    // Uncheck the second checkbox if it's checked
+    // Ensure the first checkbox is not checked and the second can be checked
     if (await checkboxes.nth(1).isChecked()) {
       await checkboxes.nth(1).uncheck();
     }
 
     // ✅ Assertions
     await expect(checkboxes.first()).not.toBeChecked();
-    await expect(checkboxes.nth(1)).not.toBeChecked();
+    // Now check the second checkbox and assert it's checked
+    await checkboxes.nth(1).check();
     await expect(checkboxes.nth(1)).toBeChecked();
   });
 
@@ -218,6 +229,7 @@ test.describe('Test InternetHerokuApp application', () => {
     await herokuapp.clickLeftMenu("Key Presses");
 
     // Type a key into the input field
+    await page.click('#target');
     await page.press('#target', 'A');
 
     // ✅ Assertion: Verify the result text shows the correct key
@@ -225,7 +237,9 @@ test.describe('Test InternetHerokuApp application', () => {
     await expect(result).toContainText('You entered: A');
 
     // Try another key
-    await page.press('#target', 'Enter');
+    await page.click('#target');
+    await page.focus('#target');
+    await page.keyboard.press('Enter');
     await expect(result).toContainText('You entered: ENTER');
 
     console.log('✅ Key presses verified successfully');
