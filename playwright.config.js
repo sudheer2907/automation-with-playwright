@@ -28,7 +28,10 @@ const config = {
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: 3, // sets the parallel thread
-  reporter: [['html', { open: 'never' }]],
+  reporter: [
+    ['html', { open: 'never' }],
+    ['allure-playwright']
+  ],
 
   use: {
     baseURL: process.env.BASE_URL || 'https://the-internet.herokuapp.com/',
