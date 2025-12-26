@@ -1,16 +1,35 @@
 const { expect } = require('@playwright/test');
 
+/**
+ * Page-level helper for the-internet.herokuapp.com pages.
+ * Encapsulates page interactions and assertions used across tests.
+ * @class Herokuapp
+ */
 exports.Herokuapp = class Herokuapp {
-
+  /**
+   * Create a Herokuapp helper.
+   * @param {import('@playwright/test').Page} page - Playwright page instance
+   */
   constructor(page) {
     this.page = page;
   }
 
+  /**
+   * Check whether the home page is loaded by verifying the welcome header is visible.
+   * @returns {Promise<boolean>} true if the home page welcome header is visible
+   */
   async isHomePageLoaded() {
     const welcomeText = this.page.locator("//h1[contains(text(),'Welcome to the-internet')]");
     return await welcomeText.isVisible();
   }
 
+  /**
+   * Click a left-hand navigation menu item.
+   * Attempts an exact text match first, then falls back to a contains() match.
+   * @param {string} menu - The visible menu text to click (e.g. 'A/B Testing')
+   * @returns {Promise<void>}
+   * @throws Will throw if the menu cannot be found or clicked
+   */
   async clickLeftMenu(menu) {
     console.log("Clicking menu: " + menu);
     // Prefer exact link text match to avoid ambiguous matches like
@@ -32,32 +51,62 @@ exports.Herokuapp = class Herokuapp {
     }
   }
 
+  /**
+   * Check whether the A/B Testing page is opened by checking the page header.
+   * @returns {Promise<boolean>} true when the A/B Testing header is visible
+   */
   async isABTestingPageOpened() {
     return await this.page.locator("//h3[contains(text(),'A/B Test')]").isVisible();
   }
 
+  /**
+   * Verify the Add/Remove Elements page is opened by waiting for its header.
+   * Waits up to 5s for visibility, then returns the visible state.
+   * @returns {Promise<boolean>} true if the Add/Remove Elements header is visible
+   */
   async isAddRemovePageOpened() {
     const addRemoveHeader = this.page.locator("//h3[contains(text(),'Add/Remove Elements')]");
     await addRemoveHeader.waitFor({ state: 'visible', timeout: 5000 });
     return await addRemoveHeader.isVisible();
   }
 
+  /**
+   * Click the 'Add Element' button on the Add/Remove Elements page.
+   * Waits up to 5s for the button to be visible before clicking.
+   * @returns {Promise<void>}
+   */
   async clickAddElementButton() {
     const addButton = this.page.locator("//button[text()='Add Element']");
     await addButton.waitFor({ state: 'visible', timeout: 5000 });
     return await addButton.click();
   }
 
+  /**
+   * Determine whether a 'Delete' button is present and visible on the page.
+   * @returns {Promise<boolean>} true if at least one Delete button is visible
+   */
   async isDeleteButtonDisplayed() {
     const deleteButton = this.page.locator("//button[contains(text(),'Delete')]");
     return await deleteButton.isVisible();
   }
 
+  /**
+   * Click a column header in example table 1 to trigger sorting.
+   * @param {string} columnName - Visible column header text to click
+   * @returns {Promise<void>}
+   */
   async sortExample1Column(columnName) {
     const columnXpath = this.page.locator("//table[@id='table1']//span[contains(text(),'" + columnName + "')]");
     return await columnXpath.click();
   }
 
+  /**
+   * Assert that a column in table1 is sorted in ascending order (string comparison).
+   * Throws if the column cannot be found.
+   * @param {string} columnName - Header text of the column to check
+   * @returns {Promise<boolean>} true if the column is sorted ascending
+   * @throws {Error} when the column is not found
+   */
   async isColumnSortedAsc(columnName) {
     // Find the index of the column based on its header text
     const columnIndex = await this.page.$$eval(
@@ -88,6 +137,13 @@ exports.Herokuapp = class Herokuapp {
     return true;
   }
 
+  /**
+   * Assert that a column in table1 is sorted in descending order (string comparison).
+   * Throws if the column cannot be found.
+   * @param {string} columnName - Header text of the column to check
+   * @returns {Promise<boolean>} true if the column is sorted descending
+   * @throws {Error} when the column is not found
+   */
   async isColumnSortedDsc(columnName) {
     // Find the index of the column based on its header text
     const columnIndex = await this.page.$$eval(
@@ -118,13 +174,35 @@ exports.Herokuapp = class Herokuapp {
     return true; // Sorted descending
   }
 
+  /**
+   * Convenience wrapper to check sorting for example table 1.
+   * @param {string} columnName - Header text of the column to check
+   * @param {'asc'|'desc'} [order='asc'] - Sort order to verify
+   * @returns {Promise<boolean>} true if the column is sorted in the requested order
+   */
   async isColumnSortedExample1(columnName, order = "asc") {
     return await this.isColumnSortedByTableId("table1", columnName, order);
   }
 
+  /**
+   * Convenience wrapper to check sorting for example table 2.
+   * @param {string} columnName - Header text of the column to check
+   * @param {'asc'|'desc'} [order='asc'] - Sort order to verify
+   * @returns {Promise<boolean>} true if the column is sorted in the requested order
+   */
   async isColumnSortedExample2(columnName, order = "asc") {
     return await this.isColumnSortedByTableId("table2", columnName, order);
   }
+  /**
+   * Check whether a given column in the specified table is sorted.
+   * This method attempts numeric comparison first (useful for currency/numeric cells) and
+   * falls back to string localeCompare when values are not numeric.
+   * @param {string} tableId - The DOM id of the table (without the #), e.g. 'table1'
+   * @param {string} columnName - Visible column header text to locate the column
+   * @param {'asc'|'desc'} [order='asc'] - Sort order to verify
+   * @returns {Promise<boolean>} true if the column is sorted in the requested order
+   * @throws {Error} when the column cannot be found or an invalid order value is provided
+   */
   async isColumnSortedByTableId(tableId, columnName, order = "asc") {
     // Find the index of the column based on its header text
     const columnIndex = await this.page.$$eval(
@@ -185,11 +263,22 @@ exports.Herokuapp = class Herokuapp {
   }
 
   // Convenience wrapper used by some tests
+  /**
+   * Convenience wrapper that checks sorting on the default example table (table1).
+   * @param {string} columnName - Header text of the column to check
+   * @param {'asc'|'desc'} [order='asc'] - Sort order to verify
+   * @returns {Promise<boolean>} true if the column is sorted in the requested order
+   */
   async isColumnSorted(columnName, order = "asc") {
     return await this.isColumnSortedByTableId("table1", columnName, order);
   }
 
   // Sort a column in the second example table
+  /**
+   * Click a column header in example table 2 to trigger sorting.
+   * @param {string} columnName - Visible column header text to click
+   * @returns {Promise<void>}
+   */
   async sortExample2Column(columnName) {
     const columnXpath = this.page.locator("//table[@id='table2']//span[contains(text(),'" + columnName + "')]");
     return await columnXpath.click();
