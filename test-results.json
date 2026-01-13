@@ -1,0 +1,2499 @@
+{
+  "executionRuns": [
+    {
+      "timestamp": "2026-01-10T09:12:18.959Z",
+      "displayTime": "10/1/2026, 2:42:18 pm",
+      "passed": 44,
+      "failed": 14,
+      "skipped": 0,
+      "total": 58,
+      "tests": [
+        {
+          "name": "Verify Key Press",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:227:7",
+          "failureMessage": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('#result')\nExpected substring: \"You entered: ENTER\"\nReceived string:    \"\"\nTimeout: 10000ms\n\nCall log:\n  - Expect \"toContainText\" with timeout 10000ms\n  - waiting for locator('#result')\n    - waiting for navigation to finish...\n    - navigated to \"https://the-internet.herokuapp.com/key_presses?\"\n    13 × locator resolved to <p id=\"result\"></p>\n       - unexpected value \"\"\n",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Web Site column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Action column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Action column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Web Site column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Due column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Due column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Email column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Email column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify First Name column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify First Name column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Last Name column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Last Name column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Table Sorting",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:174:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 500 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 404 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 301 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 200 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Prompt",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:137:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Confirm",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:115:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Alerts",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:95:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify user is able to select option 1",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:81:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify checkboxes are working",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:62:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify AB testing page is working.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:20:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Broken Images page reports broken images",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:32:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Add Remove Page is working.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:26:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Internet Herokuapp Home Page is working fine.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:16:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify a file can be downloaded and saved",
+          "status": "failed",
+          "description": "",
+          "fullName": "testFileDownload.spec.js:18:7",
+          "failureMessage": "Error: expect(received).toBeGreaterThan(expected)\n\nExpected: > 0\nReceived:   0",
+          "duration": 0
+        },
+        {
+          "name": "Download a list of specific files and verify results",
+          "status": "passed",
+          "description": "",
+          "fullName": "testFileDownload.spec.js:44:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Key Press",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:227:7",
+          "failureMessage": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('#result')\nExpected substring: \"You entered: ENTER\"\nReceived string:    \"\"\nTimeout: 10000ms\n\nCall log:\n  - Expect \"toContainText\" with timeout 10000ms\n  - waiting for locator('#result')\n    - waiting for navigation to finish...\n    - navigated to \"https://the-internet.herokuapp.com/key_presses?\"\n    13 × locator resolved to <p id=\"result\"></p>\n       - unexpected value \"\"\n",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Action column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Action column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Web Site column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Web Site column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Due column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Due column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Email column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Email column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify First Name column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify First Name column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Last Name column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Last Name column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Table Sorting",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:174:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 500 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 404 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 301 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 200 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Prompt",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:137:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Confirm",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:115:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Alerts",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:95:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify user is able to select option 1",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:81:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify checkboxes are working",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:62:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Add Remove Page is working.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:26:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Broken Images page reports broken images",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:32:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify AB testing page is working.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:20:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Internet Herokuapp Home Page is working fine.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:16:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Download a list of specific files and verify results",
+          "status": "passed",
+          "description": "",
+          "fullName": "testFileDownload.spec.js:44:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify a file can be downloaded and saved",
+          "status": "failed",
+          "description": "",
+          "fullName": "testFileDownload.spec.js:18:7",
+          "failureMessage": "Error: expect(received).toBeGreaterThan(expected)\n\nExpected: > 0\nReceived:   0",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-01-10T09:08:11.173Z",
+      "displayTime": "10/1/2026, 2:38:11 pm",
+      "passed": 43,
+      "failed": 15,
+      "skipped": 0,
+      "total": 58,
+      "tests": [
+        {
+          "name": "Verify Key Press",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:227:7",
+          "failureMessage": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('#result')\nExpected substring: \"You entered: ENTER\"\nReceived string:    \"\"\nTimeout: 10000ms\n\nCall log:\n  - Expect \"toContainText\" with timeout 10000ms\n  - waiting for locator('#result')\n    - waiting for navigation to finish...\n    - navigated to \"https://the-internet.herokuapp.com/key_presses?\"\n    13 × locator resolved to <p id=\"result\"></p>\n       - unexpected value \"\"\n",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Action column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Action column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Web Site column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Web Site column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Due column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Due column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Email column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Email column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify First Name column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify First Name column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Last Name column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Last Name column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Table Sorting",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:174:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 500 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 404 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 301 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 200 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Prompt",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:137:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Confirm",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:115:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Alerts",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:95:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify user is able to select option 1",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:81:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify checkboxes are working",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:62:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Add Remove Page is working.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:26:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Broken Images page reports broken images",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:32:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify AB testing page is working.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:20:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Internet Herokuapp Home Page is working fine.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:16:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Download a list of specific files and verify results",
+          "status": "passed",
+          "description": "",
+          "fullName": "testFileDownload.spec.js:44:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify a file can be downloaded and saved",
+          "status": "failed",
+          "description": "",
+          "fullName": "testFileDownload.spec.js:18:7",
+          "failureMessage": "Error: expect(received).toBeGreaterThan(expected)\n\nExpected: > 0\nReceived:   0",
+          "duration": 0
+        },
+        {
+          "name": "Verify Key Press",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:227:7",
+          "failureMessage": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('#result')\nExpected substring: \"You entered: ENTER\"\nReceived string:    \"\"\nTimeout: 10000ms\n\nCall log:\n  - Expect \"toContainText\" with timeout 10000ms\n  - waiting for locator('#result')\n    - waiting for navigation to finish...\n    - navigated to \"https://the-internet.herokuapp.com/key_presses?\"\n    13 × locator resolved to <p id=\"result\"></p>\n       - unexpected value \"\"\n",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Action column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Action column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Web Site column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Web Site column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Due column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Due column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Email column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Email column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify First Name column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify First Name column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Last Name column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Last Name column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Table Sorting",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:174:7",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 500 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 404 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 301 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 200 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Prompt",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:137:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Confirm",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:115:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Alerts",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:95:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify user is able to select option 1",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:81:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify checkboxes are working",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:62:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Add Remove Page is working.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:26:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Broken Images page reports broken images",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:32:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify AB testing page is working.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:20:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Internet Herokuapp Home Page is working fine.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:16:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Download a list of specific files and verify results",
+          "status": "passed",
+          "description": "",
+          "fullName": "testFileDownload.spec.js:44:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify a file can be downloaded and saved",
+          "status": "failed",
+          "description": "",
+          "fullName": "testFileDownload.spec.js:18:7",
+          "failureMessage": "Error: expect(received).toBeGreaterThan(expected)\n\nExpected: > 0\nReceived:   0",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-01-10T09:04:51.721Z",
+      "displayTime": "10/1/2026, 2:34:51 pm",
+      "passed": 43,
+      "failed": 15,
+      "skipped": 0,
+      "total": 58,
+      "tests": [
+        {
+          "name": "Verify Key Press",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:227:7",
+          "failureMessage": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('#result')\nExpected substring: \"You entered: ENTER\"\nReceived string:    \"\"\nTimeout: 10000ms\n\nCall log:\n  - Expect \"toContainText\" with timeout 10000ms\n  - waiting for locator('#result')\n    - waiting for navigation to finish...\n    - navigated to \"https://the-internet.herokuapp.com/key_presses?\"\n    13 × locator resolved to <p id=\"result\"></p>\n       - unexpected value \"\"\n",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Action column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Action column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Web Site column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Web Site column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Due column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Due column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Email column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Email column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify First Name column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify First Name column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Last Name column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Last Name column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Table Sorting",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:174:7",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 500 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 404 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 301 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 200 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Prompt",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:137:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Confirm",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:115:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Alerts",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:95:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify user is able to select option 1",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:81:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify checkboxes are working",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:62:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Add Remove Page is working.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:26:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Broken Images page reports broken images",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:32:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify AB testing page is working.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:20:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Internet Herokuapp Home Page is working fine.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:16:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Download a list of specific files and verify results",
+          "status": "passed",
+          "description": "",
+          "fullName": "testFileDownload.spec.js:44:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify a file can be downloaded and saved",
+          "status": "failed",
+          "description": "",
+          "fullName": "testFileDownload.spec.js:18:7",
+          "failureMessage": "Error: expect(received).toBeGreaterThan(expected)\n\nExpected: > 0\nReceived:   0",
+          "duration": 0
+        },
+        {
+          "name": "Verify Key Press",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:227:7",
+          "failureMessage": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('#result')\nExpected substring: \"You entered: ENTER\"\nReceived string:    \"\"\nTimeout: 10000ms\n\nCall log:\n  - Expect \"toContainText\" with timeout 10000ms\n  - waiting for locator('#result')\n    - waiting for navigation to finish...\n    - navigated to \"https://the-internet.herokuapp.com/key_presses?\"\n    13 × locator resolved to <p id=\"result\"></p>\n       - unexpected value \"\"\n",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Action column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Action column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Web Site column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Due column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Web Site column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Due column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Email column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Email column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify First Name column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify First Name column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Last Name column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Last Name column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Verify Table Sorting",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:174:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 500 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 404 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 301 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 200 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Prompt",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:137:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Confirm",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:115:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Alerts",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:95:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify user is able to select option 1",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:81:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify checkboxes are working",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:62:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Broken Images page reports broken images",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:32:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Add Remove Page is working.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:26:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify AB testing page is working.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:20:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Internet Herokuapp Home Page is working fine.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:16:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify a file can be downloaded and saved",
+          "status": "failed",
+          "description": "",
+          "fullName": "testFileDownload.spec.js:18:7",
+          "failureMessage": "Error: expect(received).toBeGreaterThan(expected)\n\nExpected: > 0\nReceived:   0",
+          "duration": 0
+        },
+        {
+          "name": "Download a list of specific files and verify results",
+          "status": "passed",
+          "description": "",
+          "fullName": "testFileDownload.spec.js:44:7",
+          "failureMessage": "",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-01-10T09:02:53.935Z",
+      "displayTime": "10/1/2026, 2:32:53 pm",
+      "passed": 21,
+      "failed": 8,
+      "skipped": 0,
+      "total": 29,
+      "tests": [
+        {
+          "name": "Verify Key Press",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:227:7",
+          "failureMessage": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('#result')\nExpected substring: \"You entered: ENTER\"\nReceived string:    \"\"\nTimeout: 10000ms\n\nCall log:\n  - Expect \"toContainText\" with timeout 10000ms\n  - waiting for locator('#result')\n    - waiting for navigation to finish...\n    - navigated to \"https://the-internet.herokuapp.com/key_presses?\"\n    13 × locator resolved to <p id=\"result\"></p>\n       - unexpected value \"\"\n",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Action column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Action column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Web Site column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Due column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Web Site column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Due column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Email column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Email column is sortable",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify First Name column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify First Name column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 2: Verify Last Name column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:210:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Example 1: Verify Last Name column is sortable",
+          "status": "failed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:195:11",
+          "failureMessage": "Error: expect(received).toBeTruthy()\n\nReceived: false",
+          "duration": 0
+        },
+        {
+          "name": "Verify Table Sorting",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:174:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 500 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 404 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 301 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Status Code 200 page",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:161:9",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Prompt",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:137:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Confirm",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:115:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify JS Alerts",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:95:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify user is able to select option 1",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:81:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify checkboxes are working",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:62:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Broken Images page reports broken images",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:32:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Add Remove Page is working.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:26:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify AB testing page is working.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:20:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify Internet Herokuapp Home Page is working fine.",
+          "status": "passed",
+          "description": "",
+          "fullName": "testInternetHerokuApp.spec.js:16:7",
+          "failureMessage": "",
+          "duration": 0
+        },
+        {
+          "name": "Verify a file can be downloaded and saved",
+          "status": "failed",
+          "description": "",
+          "fullName": "testFileDownload.spec.js:18:7",
+          "failureMessage": "Error: expect(received).toBeGreaterThan(expected)\n\nExpected: > 0\nReceived:   0",
+          "duration": 0
+        },
+        {
+          "name": "Download a list of specific files and verify results",
+          "status": "passed",
+          "description": "",
+          "fullName": "testFileDownload.spec.js:44:7",
+          "failureMessage": "",
+          "duration": 0
+        }
+      ]
+    }
+  ],
+  "testRuns": [
+    {
+      "file": "baa25f43-ebdd-49b4-aeaa-0a6750c4f0e0-result.json",
+      "name": "Verify Key Press",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:12:18.959Z",
+      "duration": 0
+    },
+    {
+      "file": "3b4c1609-ad76-4190-bc66-fbfbaf6c8a50-result.json",
+      "name": "Example 2: Verify Web Site column is sortable",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:12:15.805Z",
+      "duration": 0
+    },
+    {
+      "file": "90f05b0d-e779-41eb-aea3-2ec1fc8c6dbc-result.json",
+      "name": "Example 2: Verify Action column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:12:15.224Z",
+      "duration": 0
+    },
+    {
+      "file": "d7de9e9d-603d-4824-ab32-e1905812605a-result.json",
+      "name": "Example 1: Verify Action column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:12:14.929Z",
+      "duration": 0
+    },
+    {
+      "file": "772c399e-a21d-48b3-85be-67a4d9943f17-result.json",
+      "name": "Example 1: Verify Web Site column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:12:11.465Z",
+      "duration": 0
+    },
+    {
+      "file": "05f0d783-ca21-487b-82dd-64c0c9b39fe9-result.json",
+      "name": "Example 2: Verify Due column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:12:11.068Z",
+      "duration": 0
+    },
+    {
+      "file": "9611391a-1fa8-44b3-96ff-e0b8a921829f-result.json",
+      "name": "Example 1: Verify Due column is sortable",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:12:10.553Z",
+      "duration": 0
+    },
+    {
+      "file": "d0451266-22e8-4356-be2b-cea8de6fb86a-result.json",
+      "name": "Example 2: Verify Email column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:12:06.654Z",
+      "duration": 0
+    },
+    {
+      "file": "3680cb65-0243-4463-b0fd-93d27695d3a5-result.json",
+      "name": "Example 1: Verify Email column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:12:05.474Z",
+      "duration": 0
+    },
+    {
+      "file": "b0991cd5-c055-4193-9614-02ce165f252f-result.json",
+      "name": "Example 2: Verify First Name column is sortable",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:12:05.142Z",
+      "duration": 0
+    },
+    {
+      "file": "bbca80ab-685a-4793-84ba-afaa46000959-result.json",
+      "name": "Example 1: Verify First Name column is sortable",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:12:01.418Z",
+      "duration": 0
+    },
+    {
+      "file": "61984127-30af-4eb9-b4d7-30d55a6edac3-result.json",
+      "name": "Example 2: Verify Last Name column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:12:01.332Z",
+      "duration": 0
+    },
+    {
+      "file": "b378583e-7a4a-43c8-8bd4-c82466e48843-result.json",
+      "name": "Example 1: Verify Last Name column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:12:00.162Z",
+      "duration": 0
+    },
+    {
+      "file": "ec5cc478-cd74-4f4b-9a47-dec04ba94a50-result.json",
+      "name": "Verify Table Sorting",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:11:56.510Z",
+      "duration": 0
+    },
+    {
+      "file": "539b7988-c263-4943-b64d-352c2c532b54-result.json",
+      "name": "Verify Status Code 500 page",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:11:55.685Z",
+      "duration": 0
+    },
+    {
+      "file": "9174ec9d-034d-4716-85f7-deaa72cb5c32-result.json",
+      "name": "Verify Status Code 404 page",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:11:55.625Z",
+      "duration": 0
+    },
+    {
+      "file": "39d7c3a3-f8cb-4712-b0ef-542d66101eee-result.json",
+      "name": "Verify Status Code 301 page",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:11:52.079Z",
+      "duration": 0
+    },
+    {
+      "file": "0afbfe9d-1e15-491d-b458-5b8e32e72409-result.json",
+      "name": "Verify Status Code 200 page",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:11:51.236Z",
+      "duration": 0
+    },
+    {
+      "file": "b53afa11-7d43-40d9-8f12-8f0ac7bc3aad-result.json",
+      "name": "Verify JS Prompt",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:11:47.228Z",
+      "duration": 0
+    },
+    {
+      "file": "51e1d457-1390-4ad7-a165-e376c237111e-result.json",
+      "name": "Verify JS Confirm",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:11:46.384Z",
+      "duration": 0
+    },
+    {
+      "file": "163606d2-f848-4443-a619-a4bea7e737c1-result.json",
+      "name": "Verify JS Alerts",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:11:44.477Z",
+      "duration": 0
+    },
+    {
+      "file": "5d750af7-340c-4832-8005-5513fab6559c-result.json",
+      "name": "Verify user is able to select option 1",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:11:43.152Z",
+      "duration": 0
+    },
+    {
+      "file": "b768b2e5-2605-4cbd-8002-81c8309abd08-result.json",
+      "name": "Verify checkboxes are working",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:11:42.271Z",
+      "duration": 0
+    },
+    {
+      "file": "a520c30d-2565-41f2-962a-f4008e7c388e-result.json",
+      "name": "Verify AB testing page is working.",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:11:38.746Z",
+      "duration": 0
+    },
+    {
+      "file": "a3bcce38-a4c1-413a-8230-5c5ad8e44a3c-result.json",
+      "name": "Verify Broken Images page reports broken images",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:11:38.726Z",
+      "duration": 0
+    },
+    {
+      "file": "bb655f6f-1867-485c-b2f2-54d45dad190a-result.json",
+      "name": "Verify Add Remove Page is working.",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:11:37.963Z",
+      "duration": 0
+    },
+    {
+      "file": "ca738a1a-0ed0-4719-b793-bc8db46adcf2-result.json",
+      "name": "Verify Internet Herokuapp Home Page is working fine.",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:11:29.694Z",
+      "duration": 0
+    },
+    {
+      "file": "ac88d4e1-da33-4ca2-a380-62ba881f4d42-result.json",
+      "name": "Verify a file can be downloaded and saved",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:11:29.685Z",
+      "duration": 0
+    },
+    {
+      "file": "f75ea2e1-dc65-4b3c-a25c-a875535ff032-result.json",
+      "name": "Download a list of specific files and verify results",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:11:29.671Z",
+      "duration": 0
+    },
+    {
+      "file": "149f15eb-40cb-4335-bf21-a584a27b93f1-result.json",
+      "name": "Verify Key Press",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:08:11.173Z",
+      "duration": 0
+    },
+    {
+      "file": "8c0bc894-be4b-4d47-8f2f-3081d845d03c-result.json",
+      "name": "Example 2: Verify Action column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:08:08.150Z",
+      "duration": 0
+    },
+    {
+      "file": "25b3b223-0caa-4654-ad90-e2496ce7d4a6-result.json",
+      "name": "Example 1: Verify Action column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:08:07.498Z",
+      "duration": 0
+    },
+    {
+      "file": "a557a746-5c4c-44ac-a715-bbda360544c2-result.json",
+      "name": "Example 2: Verify Web Site column is sortable",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:08:05.865Z",
+      "duration": 0
+    },
+    {
+      "file": "b7095479-a215-4d82-abe0-afae5166e1ca-result.json",
+      "name": "Example 1: Verify Web Site column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:08:03.135Z",
+      "duration": 0
+    },
+    {
+      "file": "a62fd1ed-250c-49f0-8e70-958fc68a1e6f-result.json",
+      "name": "Example 2: Verify Due column is sortable",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:08:00.467Z",
+      "duration": 0
+    },
+    {
+      "file": "587d23a0-bfc3-42b7-8cc0-351b2f5f755a-result.json",
+      "name": "Example 1: Verify Due column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:07:59.884Z",
+      "duration": 0
+    },
+    {
+      "file": "364e1983-b1ff-49e4-a9d2-6a19b4db1771-result.json",
+      "name": "Example 2: Verify Email column is sortable",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:07:58.155Z",
+      "duration": 0
+    },
+    {
+      "file": "3279e42e-d24a-422c-9384-22269ca480ef-result.json",
+      "name": "Example 1: Verify Email column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:07:54.670Z",
+      "duration": 0
+    },
+    {
+      "file": "336ceabd-efbb-468c-838d-c08badabc77d-result.json",
+      "name": "Example 2: Verify First Name column is sortable",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:07:53.163Z",
+      "duration": 0
+    },
+    {
+      "file": "8714ee7b-cfa2-4522-9dd3-0914e0c8b06b-result.json",
+      "name": "Example 1: Verify First Name column is sortable",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:07:53.146Z",
+      "duration": 0
+    },
+    {
+      "file": "66455ec9-10b7-42c5-892a-f8c4137bda94-result.json",
+      "name": "Example 2: Verify Last Name column is sortable",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:07:48.976Z",
+      "duration": 0
+    },
+    {
+      "file": "0f0ee9b8-7345-4434-a71f-9e2220b44475-result.json",
+      "name": "Example 1: Verify Last Name column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:07:47.967Z",
+      "duration": 0
+    },
+    {
+      "file": "95e4d7ee-fb76-486a-a101-c64f128596f3-result.json",
+      "name": "Verify Table Sorting",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:07:47.620Z",
+      "duration": 0
+    },
+    {
+      "file": "a29e362b-357f-4978-898e-9357faa773de-result.json",
+      "name": "Verify Status Code 500 page",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:07:44.769Z",
+      "duration": 0
+    },
+    {
+      "file": "75fc961e-c4a0-4a38-bdfe-ba0465fbfe1c-result.json",
+      "name": "Verify Status Code 404 page",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:07:44.006Z",
+      "duration": 0
+    },
+    {
+      "file": "b8b02abd-1268-4f6a-b96a-a95f2c37f6e5-result.json",
+      "name": "Verify Status Code 301 page",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:07:43.551Z",
+      "duration": 0
+    },
+    {
+      "file": "c76a1e06-b634-4db2-827a-f5141b92bb77-result.json",
+      "name": "Verify Status Code 200 page",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:07:37.697Z",
+      "duration": 0
+    },
+    {
+      "file": "3a438fde-2f39-4aa0-b3aa-e9e10222ac1f-result.json",
+      "name": "Verify JS Prompt",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:07:36.866Z",
+      "duration": 0
+    },
+    {
+      "file": "50f250a3-4cc0-44a4-900a-4037651f1f1c-result.json",
+      "name": "Verify JS Confirm",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:07:33.098Z",
+      "duration": 0
+    },
+    {
+      "file": "a1a33e5b-ea41-4c8f-a48f-fd1d310fe1b5-result.json",
+      "name": "Verify JS Alerts",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:07:32.880Z",
+      "duration": 0
+    },
+    {
+      "file": "abb0f84a-468b-4b94-8c83-b4a5e47e8df2-result.json",
+      "name": "Verify user is able to select option 1",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:07:31.934Z",
+      "duration": 0
+    },
+    {
+      "file": "617ef883-2643-42ee-b556-7a64a52a0d40-result.json",
+      "name": "Verify checkboxes are working",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:07:29.200Z",
+      "duration": 0
+    },
+    {
+      "file": "0430cb77-2052-4349-91fc-afefa4a64ef3-result.json",
+      "name": "Verify Add Remove Page is working.",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:07:27.912Z",
+      "duration": 0
+    },
+    {
+      "file": "73a44a5f-0156-413c-b8c3-74d11f153ee7-result.json",
+      "name": "Verify Broken Images page reports broken images",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:07:27.426Z",
+      "duration": 0
+    },
+    {
+      "file": "34523f6a-ae04-46bc-8a44-fff8ba042567-result.json",
+      "name": "Verify AB testing page is working.",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:07:25.377Z",
+      "duration": 0
+    },
+    {
+      "file": "3b2f3931-6217-4e5c-a070-3236cc4bc5de-result.json",
+      "name": "Verify Internet Herokuapp Home Page is working fine.",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:07:21.125Z",
+      "duration": 0
+    },
+    {
+      "file": "8ae1944c-b6cc-4cbb-9c4c-50370c42f50e-result.json",
+      "name": "Download a list of specific files and verify results",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:07:21.114Z",
+      "duration": 0
+    },
+    {
+      "file": "ca438663-e3b8-4491-b1ed-bb43ffde2b0b-result.json",
+      "name": "Verify a file can be downloaded and saved",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:07:21.104Z",
+      "duration": 0
+    },
+    {
+      "file": "9eb23c17-4cff-4971-993b-62f4d3e31520-result.json",
+      "name": "Verify Key Press",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:04:51.721Z",
+      "duration": 0
+    },
+    {
+      "file": "9e686c13-a445-489d-b685-3d47bb0d02eb-result.json",
+      "name": "Example 1: Verify Action column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:04:46.936Z",
+      "duration": 0
+    },
+    {
+      "file": "13cae15a-a2c9-46bf-b837-bf0ee4304c41-result.json",
+      "name": "Example 2: Verify Action column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:04:46.877Z",
+      "duration": 0
+    },
+    {
+      "file": "e691ccb0-1c05-4bbd-8768-883f165cff10-result.json",
+      "name": "Example 2: Verify Web Site column is sortable",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:04:39.997Z",
+      "duration": 0
+    },
+    {
+      "file": "bffd7abc-4340-4d2e-8003-82459617a891-result.json",
+      "name": "Example 1: Verify Web Site column is sortable",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:04:39.580Z",
+      "duration": 0
+    },
+    {
+      "file": "578bda70-4fcd-45a4-b2b4-addeb04d13fb-result.json",
+      "name": "Example 2: Verify Due column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:04:38.227Z",
+      "duration": 0
+    },
+    {
+      "file": "db7398ef-e105-47a9-9895-869feadf00ee-result.json",
+      "name": "Example 1: Verify Due column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:04:35.207Z",
+      "duration": 0
+    },
+    {
+      "file": "42d25905-5b02-4ee9-bafa-8301746f22a5-result.json",
+      "name": "Example 2: Verify Email column is sortable",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:04:32.909Z",
+      "duration": 0
+    },
+    {
+      "file": "bcb0d1d9-bf39-42fe-93e6-08c3b25998fd-result.json",
+      "name": "Example 1: Verify Email column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:04:27.803Z",
+      "duration": 0
+    },
+    {
+      "file": "1ae7f7ce-6bf6-476d-a545-09161d0a3541-result.json",
+      "name": "Example 2: Verify First Name column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:04:27.572Z",
+      "duration": 0
+    },
+    {
+      "file": "b7b859f6-71e3-433a-98ac-dcf223ff92b7-result.json",
+      "name": "Example 1: Verify First Name column is sortable",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:04:26.770Z",
+      "duration": 0
+    },
+    {
+      "file": "6f585760-9918-4e72-b34d-c7f0ebfb6633-result.json",
+      "name": "Example 2: Verify Last Name column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:04:22.730Z",
+      "duration": 0
+    },
+    {
+      "file": "3a7a9498-2d11-4ac9-86f8-f7bd8c3438ba-result.json",
+      "name": "Example 1: Verify Last Name column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:04:20.976Z",
+      "duration": 0
+    },
+    {
+      "file": "cde7818c-4ed2-4e40-9183-d9b4ebb145ac-result.json",
+      "name": "Verify Table Sorting",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:04:15.235Z",
+      "duration": 0
+    },
+    {
+      "file": "58c9c994-88ff-4aea-ae9a-ede35890ad1c-result.json",
+      "name": "Verify Status Code 500 page",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:04:13.746Z",
+      "duration": 0
+    },
+    {
+      "file": "f3c231c9-9bdf-4b2f-bf24-0a274ce839ca-result.json",
+      "name": "Verify Status Code 404 page",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:04:12.462Z",
+      "duration": 0
+    },
+    {
+      "file": "674702c8-a5b7-43ab-aa69-db923feaf5ef-result.json",
+      "name": "Verify Status Code 301 page",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:04:11.070Z",
+      "duration": 0
+    },
+    {
+      "file": "b30051c7-ad3e-4d53-a923-b7929b9d5bbf-result.json",
+      "name": "Verify Status Code 200 page",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:04:06.962Z",
+      "duration": 0
+    },
+    {
+      "file": "eec6ee25-4e62-45fc-a436-2d8246c32ba2-result.json",
+      "name": "Verify JS Prompt",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:04:02.692Z",
+      "duration": 0
+    },
+    {
+      "file": "876ca22c-1727-4539-81cb-a77eb69ca941-result.json",
+      "name": "Verify JS Confirm",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:04:02.101Z",
+      "duration": 0
+    },
+    {
+      "file": "36e34a19-092c-4aee-9170-9c95984b4cde-result.json",
+      "name": "Verify JS Alerts",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:04:01.305Z",
+      "duration": 0
+    },
+    {
+      "file": "a996b91a-b938-453f-b4e4-6ff012f5f573-result.json",
+      "name": "Verify user is able to select option 1",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:03:57.801Z",
+      "duration": 0
+    },
+    {
+      "file": "6c809607-ad64-416e-8d42-0f300a013c17-result.json",
+      "name": "Verify checkboxes are working",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:03:56.840Z",
+      "duration": 0
+    },
+    {
+      "file": "0fcbca83-a426-46d8-8efc-9b886371d117-result.json",
+      "name": "Verify Add Remove Page is working.",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:03:53.925Z",
+      "duration": 0
+    },
+    {
+      "file": "c693644b-3468-4294-afc8-185f97c412e9-result.json",
+      "name": "Verify Broken Images page reports broken images",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:03:53.301Z",
+      "duration": 0
+    },
+    {
+      "file": "60832858-4414-43dd-b6a5-8ad3c9dbb1d9-result.json",
+      "name": "Verify AB testing page is working.",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:03:52.648Z",
+      "duration": 0
+    },
+    {
+      "file": "12096c26-ad28-4373-b7fe-77922279b403-result.json",
+      "name": "Verify Internet Herokuapp Home Page is working fine.",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:03:47.694Z",
+      "duration": 0
+    },
+    {
+      "file": "70ae85bc-8070-4229-914c-0d2027f4040c-result.json",
+      "name": "Download a list of specific files and verify results",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:03:47.679Z",
+      "duration": 0
+    },
+    {
+      "file": "cd183866-1c18-4972-a73a-d8458b1eeafd-result.json",
+      "name": "Verify a file can be downloaded and saved",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:03:47.666Z",
+      "duration": 0
+    },
+    {
+      "file": "d6374142-9089-4ccb-87b2-3b4a6f7c662f-result.json",
+      "name": "Verify Key Press",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:02:53.935Z",
+      "duration": 0
+    },
+    {
+      "file": "c06f7da0-26d2-4151-9ca4-f6739bed80ea-result.json",
+      "name": "Example 2: Verify Action column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:02:52.745Z",
+      "duration": 0
+    },
+    {
+      "file": "8c824e7c-926a-4316-b332-fc9edd902055-result.json",
+      "name": "Example 1: Verify Action column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:02:52.589Z",
+      "duration": 0
+    },
+    {
+      "file": "82924e55-e621-47ee-9987-5005634a69ae-result.json",
+      "name": "Example 2: Verify Web Site column is sortable",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:02:48.115Z",
+      "duration": 0
+    },
+    {
+      "file": "0a608a2c-3522-407c-add3-b7229263f783-result.json",
+      "name": "Example 2: Verify Due column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:02:45.928Z",
+      "duration": 0
+    },
+    {
+      "file": "1681b8b6-941c-49a7-9e49-76ae4048a076-result.json",
+      "name": "Example 1: Verify Web Site column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:02:45.236Z",
+      "duration": 0
+    },
+    {
+      "file": "1912e590-c0bc-43ae-a145-2ed8db67932a-result.json",
+      "name": "Example 1: Verify Due column is sortable",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:02:40.193Z",
+      "duration": 0
+    },
+    {
+      "file": "d2e1f9c5-ca4d-4a4f-8266-ad62f3858a21-result.json",
+      "name": "Example 2: Verify Email column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:02:38.629Z",
+      "duration": 0
+    },
+    {
+      "file": "5a230004-12fd-468d-88ca-bb2f1241718d-result.json",
+      "name": "Example 1: Verify Email column is sortable",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:02:37.151Z",
+      "duration": 0
+    },
+    {
+      "file": "331b2d0c-6e4b-41e9-b079-bc9d6ecba6e7-result.json",
+      "name": "Example 1: Verify First Name column is sortable",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:02:32.633Z",
+      "duration": 0
+    },
+    {
+      "file": "2f76a337-9ecc-482d-b48f-120d8c619f59-result.json",
+      "name": "Example 2: Verify First Name column is sortable",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:02:31.888Z",
+      "duration": 0
+    },
+    {
+      "file": "dbc9fe46-0645-4dcd-b6a3-4f252e587258-result.json",
+      "name": "Example 2: Verify Last Name column is sortable",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:02:24.924Z",
+      "duration": 0
+    },
+    {
+      "file": "9ef41822-3ddd-4a8b-8d4c-587e9a2c45eb-result.json",
+      "name": "Example 1: Verify Last Name column is sortable",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:02:24.750Z",
+      "duration": 0
+    },
+    {
+      "file": "371ac8b0-8355-4ba4-902c-8a62269b668d-result.json",
+      "name": "Verify Table Sorting",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:02:22.683Z",
+      "duration": 0
+    },
+    {
+      "file": "ab20674b-cca4-4eed-83ae-f504ef6e96af-result.json",
+      "name": "Verify Status Code 500 page",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:02:20.945Z",
+      "duration": 0
+    },
+    {
+      "file": "a0361da3-c2ca-4883-8203-ec12ee269a32-result.json",
+      "name": "Verify Status Code 404 page",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:02:20.227Z",
+      "duration": 0
+    },
+    {
+      "file": "af40be09-cf1a-4c02-97fa-6e8cbdb13a76-result.json",
+      "name": "Verify Status Code 301 page",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:02:18.394Z",
+      "duration": 0
+    },
+    {
+      "file": "f58291be-3ffc-4e18-aea9-9c79e17c329e-result.json",
+      "name": "Verify Status Code 200 page",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:02:14.871Z",
+      "duration": 0
+    },
+    {
+      "file": "7fdc5ef3-0d60-4c19-881e-8b61e0c6c81f-result.json",
+      "name": "Verify JS Prompt",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:02:10.359Z",
+      "duration": 0
+    },
+    {
+      "file": "141b88dc-ede2-41e6-8b79-d1f0f00546e1-result.json",
+      "name": "Verify JS Confirm",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:02:09.176Z",
+      "duration": 0
+    },
+    {
+      "file": "21e1b951-6715-48f0-919e-d8adb3903e04-result.json",
+      "name": "Verify JS Alerts",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:02:09.131Z",
+      "duration": 0
+    },
+    {
+      "file": "04a099e0-4e59-4cc0-b798-b218e64db97d-result.json",
+      "name": "Verify user is able to select option 1",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:02:06.160Z",
+      "duration": 0
+    },
+    {
+      "file": "ca3989a8-6c23-42d3-9995-882a53e7d88c-result.json",
+      "name": "Verify checkboxes are working",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:02:04.261Z",
+      "duration": 0
+    },
+    {
+      "file": "b3b44b3b-33e0-4ef4-b970-5ab7572d9924-result.json",
+      "name": "Verify Broken Images page reports broken images",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:02:01.382Z",
+      "duration": 0
+    },
+    {
+      "file": "b4dcb6a0-578d-47f2-bb08-f6915b30bee9-result.json",
+      "name": "Verify Add Remove Page is working.",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:02:00.745Z",
+      "duration": 0
+    },
+    {
+      "file": "1f3b18c6-fe38-462c-9bee-5b3884955f06-result.json",
+      "name": "Verify AB testing page is working.",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:02:00.075Z",
+      "duration": 0
+    },
+    {
+      "file": "474299eb-88f2-4262-952c-eea6d45dc0c3-result.json",
+      "name": "Verify Internet Herokuapp Home Page is working fine.",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:01:48.760Z",
+      "duration": 0
+    },
+    {
+      "file": "a99b1a43-2f0f-42c3-bcb4-18b561fadc7f-result.json",
+      "name": "Verify a file can be downloaded and saved",
+      "status": "failed",
+      "timestamp": "2026-01-10T09:01:48.747Z",
+      "duration": 0
+    },
+    {
+      "file": "2c9fd56e-df35-481e-ad3d-1160d23f7a79-result.json",
+      "name": "Download a list of specific files and verify results",
+      "status": "passed",
+      "timestamp": "2026-01-10T09:01:48.733Z",
+      "duration": 0
+    }
+  ],
+  "summary": {
+    "totalRuns": 4,
+    "last15Days": {
+      "passed": 87,
+      "failed": 29,
+      "skipped": 0,
+      "total": 116
+    }
+  },
+  "byDay": {
+    "2026-01-10": {
+      "passed": 87,
+      "failed": 29,
+      "skipped": 0,
+      "total": 116
+    }
+  }
+}

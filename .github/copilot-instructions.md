@@ -64,4 +64,26 @@ This file contains concise, actionable guidance for AI coding agents working in 
 8. Where to look for more context
 - Examples of all patterns are in `e2e/helper/BaseHelper.js`, `e2e/helper/Herokuapp.js` and `e2e/test/testInternetHerokuApp.spec.js`.
 
+9. Multi-project workspace notes (python_automation) ✅
+- Path: `python_automation/` — a small Selenium + pytest project using page objects in `pages/` and tests in `tests/`.
+- Key files: `conftest.py` (provides `driver` fixture), `pages/login_page.py` (page object), `tests/test_login.py`.
+- Run tests (Windows PowerShell):
+  ```powershell
+  python -m pip install -r requirements.txt
+  pytest -q
+  ```
+- To generate an HTML report (uses `pytest-html`):
+  ```powershell
+  pytest --html=report.html
+  ```
+
+**Important discovery:** `conftest.py` currently defines a `driver()` helper but it is *missing* the `@pytest.fixture` decorator, so tests expecting a `driver` fixture (e.g., `tests/test_login.py`) will fail. Please add `@pytest.fixture` and a sensible scope (for example `@pytest.fixture(scope='function')`) to fix this.
+
+10. Quick notes for AI agents 🔧
+- Follow project-specific patterns: in Playwright tests instantiate helpers in `test.beforeEach` (e.g. `baseHelper = new BaseHelper(page)`), and prefer adding helper methods to `e2e/helper/*` exported via `exports.MyHelper = class {}`.
+- Do not change module systems unnecessarily — tests use ES test syntax (`import { test, expect }`) while helpers use CommonJS exports/require.
+- Reuse existing helpers (e.g. `isColumnSortedByTableId`) and follow the dialog and network-check patterns demonstrated in `e2e/test/testInternetHerokuApp.spec.js`.
+- For Python automation, follow the page object pattern in `pages/`, keep element locators as tuples `(By, selector)`, and add fixtures to `conftest.py` rather than importing test utilities directly in tests.
+- When changing config or behavior that affects artifacts, mention impact on `test-result/`, `playwright-report/`, and `allure-results/` so CI and reporting remain consistent.
+
 If anything is unclear or you'd like me to merge additional README content into this file, tell me which sections to include or update.
