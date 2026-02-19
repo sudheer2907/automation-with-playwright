@@ -1,0 +1,3 @@
+🌐 Navigating to: https://the-internet.herokuapp.com/
+Clicking menu: JavaScript Alerts
+Dialog message: I am a JS prompt

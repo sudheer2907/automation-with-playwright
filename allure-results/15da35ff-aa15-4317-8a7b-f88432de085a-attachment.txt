@@ -1,0 +1,4 @@
+🌐 Navigating to: https://the-internet.herokuapp.com/
+Navigating to Sortable Data Tables...
+Clicking menu: Sortable Data Tables
+✅ Example 2: First Name column sorted ascending

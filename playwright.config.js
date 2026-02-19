@@ -30,7 +30,8 @@ const config = {
   workers: 3, // sets the parallel thread
   reporter: [
     ['html', { open: 'never' }],
-    ['allure-playwright']
+    ['allure-playwright'],
+    ['./rp.js']
   ],
 
   use: {

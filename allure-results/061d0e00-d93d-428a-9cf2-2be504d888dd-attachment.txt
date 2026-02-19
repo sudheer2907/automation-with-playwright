@@ -1,0 +1,3 @@
+🌐 Navigating to: https://the-internet.herokuapp.com/
+Navigating to Add/Remove Elements...
+Clicking menu: Add/Remove Elements

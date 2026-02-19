@@ -1,0 +1,3 @@
+🌐 Navigating to: https://the-internet.herokuapp.com/
+Navigating to Key Presses page...
+Clicking menu: Key Presses

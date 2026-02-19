@@ -1,0 +1,5 @@
+🌐 Navigating to: https://the-internet.herokuapp.com/
+Navigating to Sortable Data Tables...
+Clicking menu: Sortable Data Tables
+✅ Example 2: Web Site column sorted ascending
+✅ Example 2: Web Site column sorted descending

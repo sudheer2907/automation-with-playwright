@@ -1,0 +1,3 @@
+🌐 Navigating to: https://the-internet.herokuapp.com/
+Navigating to File Download page...
+Clicking menu: File Download

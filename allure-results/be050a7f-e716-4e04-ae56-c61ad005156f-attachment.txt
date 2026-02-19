@@ -1,0 +1,4 @@
+🌐 Navigating to: https://the-internet.herokuapp.com/
+Navigating to File Download page...
+Clicking menu: File Download
+Downloaded and saved file: D:\workspace\automation-with-playwright\test-result\downloads\some-file.txt (307 bytes)

@@ -70,6 +70,10 @@ exports.Herokuapp = class Herokuapp {
     return await addRemoveHeader.isVisible();
   }
 
+  async addButton() {
+    return this.page.locator("//button[text()='Add Element']");
+  }
+
   /**
    * Click the 'Add Element' button on the Add/Remove Elements page.
    * Waits up to 5s for the button to be visible before clicking.
@@ -79,6 +83,11 @@ exports.Herokuapp = class Herokuapp {
     const addButton = this.page.locator("//button[text()='Add Element']");
     await addButton.waitFor({ state: 'visible', timeout: 5000 });
     return await addButton.click();
+  }
+
+  async isAddButtonDisplayed() {
+    const addButton = this.page.locator("//button[text()='Add Element']");
+    return await addButton.isVisible();
   }
 
   /**

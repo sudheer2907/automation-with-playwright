@@ -1,0 +1,5 @@
+🌐 Navigating to: https://the-internet.herokuapp.com/
+Navigating to File Download page...
+Clicking menu: File Download
+Downloaded: zero_bytes_file.txt (0 bytes)
+Downloaded count: 1. Missing count: 10

@@ -1,0 +1,41 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - link "Fork me on GitHub":
+      - /url: https://github.com/tourdedave/the-internet
+      - img "Fork me on GitHub" [ref=e5] [cursor=pointer]
+    - generic [ref=e7]:
+      - heading "File Downloader" [level=3] [ref=e8]
+      - link "element.png" [active] [ref=e9] [cursor=pointer]:
+        - /url: download/element.png
+      - link "Shivu.docx" [ref=e10] [cursor=pointer]:
+        - /url: download/Shivu.docx
+      - link "random_data.txt" [ref=e11] [cursor=pointer]:
+        - /url: download/random_data.txt
+      - link "LambdaTest.txt" [ref=e12] [cursor=pointer]:
+        - /url: download/LambdaTest.txt
+      - link "hi.txt" [ref=e13] [cursor=pointer]:
+        - /url: download/hi.txt
+      - link "Rectangle1.png" [ref=e14] [cursor=pointer]:
+        - /url: download/Rectangle1.png
+      - link "resume.pdf" [ref=e15] [cursor=pointer]:
+        - /url: download/resume.pdf
+      - link "32793256-5FC4-485A-9EC2-B3597AF7AB25.png" [ref=e16] [cursor=pointer]:
+        - /url: download/32793256-5FC4-485A-9EC2-B3597AF7AB25.png
+      - link "sample_media_file.png" [ref=e17] [cursor=pointer]:
+        - /url: download/sample_media_file.png
+      - link "Cy.Test1.txt" [ref=e18] [cursor=pointer]:
+        - /url: download/Cy.Test1.txt
+      - link "some-file.txt" [ref=e19] [cursor=pointer]:
+        - /url: download/some-file.txt
+      - link "sample.txt" [ref=e20] [cursor=pointer]:
+        - /url: download/sample.txt
+  - generic [ref=e22]:
+    - separator [ref=e23]
+    - generic [ref=e24]:
+      - text: Powered by
+      - link "Elemental Selenium" [ref=e25] [cursor=pointer]:
+        - /url: http://elementalselenium.com/
+```

@@ -1,0 +1,3 @@
+🌐 Navigating to: https://the-internet.herokuapp.com/
+Navigating to A/B Testing page...
+Clicking menu: A/B Testing

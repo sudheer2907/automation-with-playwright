@@ -1,0 +1,7 @@
+🌐 Navigating to: https://the-internet.herokuapp.com/
+Clicking menu: Broken Images
+Total Images on the page are: 4
+Broken images found: [
+  { src: 'https://the-internet.herokuapp.com/asdf.jpg', status: 404 },
+  { src: 'https://the-internet.herokuapp.com/hjkl.jpg', status: 404 }
+]
